@@ -48,11 +48,7 @@ class BottleNumber
   end
 
   def quantity
-    if number == 0
-      "no more"
-    else
-      number.to_s
-    end
+    number.to_s
   end
 
   def action
