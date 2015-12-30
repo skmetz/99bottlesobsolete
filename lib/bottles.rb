@@ -59,11 +59,7 @@ class BottleNumber
   end
 
   def pronoun
-    if number == 1
-      "it"
-    else
-      "one"
-    end
+    "one"
   end
 
   def successor
@@ -86,4 +82,7 @@ class BottleNumber0 < BottleNumber
 end
 
 class BottleNumber1 < BottleNumber
+  def pronoun
+    "it"
+  end
 end
