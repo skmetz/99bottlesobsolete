@@ -43,11 +43,7 @@ class BottleNumber
   end
 
   def container
-    if number == 1
-      "bottle"
-    else
-      "bottles"
-    end
+    "bottles"
   end
 
   def quantity
@@ -84,5 +80,9 @@ end
 class BottleNumber1 < BottleNumber
   def pronoun
     "it"
+  end
+
+  def container
+    "bottle"
   end
 end
