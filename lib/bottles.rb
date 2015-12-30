@@ -71,3 +71,6 @@ class BottleNumber
     end
   end
 end
+
+class BottleNumber0 < BottleNumber
+end
