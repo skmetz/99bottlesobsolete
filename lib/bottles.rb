@@ -25,6 +25,10 @@ end
 
 class BottleNumber
   def self.for(number)
+    if number.is_a?(BottleNumber)
+      return number
+    end
+
     case number
     when 0
       BottleNumber0.new(number)
@@ -61,7 +65,7 @@ class BottleNumber
   end
 
   def successor
-    number - 1
+    BottleNumber.for(number - 1)
   end
 end
 
@@ -75,7 +79,7 @@ class BottleNumber0 < BottleNumber
   end
 
   def successor
-    99
+    BottleNumber.for(99)
   end
 end
 
