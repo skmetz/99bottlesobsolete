@@ -24,10 +24,6 @@ end
 
 class BottleNumber
   def self.for(number)
-    if number.is_a?(BottleNumber)
-      return number
-    end
-
     case number
     when 0
       BottleNumber0.new(number)
